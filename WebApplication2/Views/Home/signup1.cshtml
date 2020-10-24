@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SIGN UP</title>
+
+
+</head>
+<body background="~/images\view.jpeg">
+    <div>
+        <button class=" back" onclick="window.location.href='index'"><span>Back</span></button>
+    </div>
+
+
+    <form action="~/Home/signupMe" method="POST">
+
+        <h1>Room Booking</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span>Your basic info</legend>
+            <label for="name">Name:*</label>
+            <input required type="text" id="name" name="user_name" value="">
+
+            <label for="mail">Email:*</label>
+            <input required type="email" id="mail" name="user_email" value="">
+
+            <label for="password">Password:*</label>
+            <input required type="password" id="password" name="user_password" value="">
+
+            <label>Gender:</label>
+            <input type="radio" id="male" value="male" name="user_gender"><label for="male" class="light">Male</label><br>
+            <input type="radio" id="female" value="female" name="user_gender"><label for="female" class="light">Female</label>
+        </fieldset>
+
+
+
+
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <div>
+        <button onclick="window.location.href='login1'"><span>move to login</span></button>
+
+    </div>
+
+
+
+</body>
+</html>

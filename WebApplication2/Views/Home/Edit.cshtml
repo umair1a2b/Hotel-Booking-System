@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Edit";
+}
+@model WebApplication2.Models.Booking
+
+<h2>Edit</h2>
+<form action="/Home/EditOK/@Model.Customer_id" method="post">
+     Check_in:
+    <input type="text" name="check_in" value="@Model.check_in" />
+    <br />
+    Check_out :
+    <input type="text" name="check_out" value="@Model.check_out" />
+    <br />
+    Adult :
+    <input type="text" name="adult" value="@Model.no_adult" />
+    <br />
+    Children :
+    <input type="text" name="children" value="@Model.no_children" />
+    <br />
+     room style:
+    <input type="text" name="room_type" value="@Model.room_type" />
+    <br />
+
+    <input type="submit" value="Edit" />
+</form>

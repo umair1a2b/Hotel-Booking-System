@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>List of Bookings</h2>
+    <table>
+        <tr>
+            <td>check_in</td>
+            <td>check_out</td>
+            <td>no_children</td>
+            <td>no_adult</td>
+            
+            
+            <td>room_type</td>
+            <td>Customer_id</td>
+        </tr>
+        @foreach (var s in Model)
+    {
+            <tr>
+                <td>@s.check_in</td>
+                <td>@s.check_out</td>
+                <td>@s.no_children</td>
+                <td>@s.no_adult</td>
+                <td>@s.room_type</td>
+                <td>@s.Customer_id</td>
+                <td>
+                    <a href="/Home/Edit/@s.Customer_id">Edit</a>
+                    <a href="/Home/Delete/@s.Customer_id">Delete</a>
+                </td>
+            </tr>
+        }
+        
+
+        </table>
+    <div>
+        <button  onclick="window.location.href='signup'">Logout<span></span></button>
+    </div>
+</body>
+</html>

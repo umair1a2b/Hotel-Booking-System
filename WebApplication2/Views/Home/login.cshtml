@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Login</title>
+    
+    
+</head>
+<body background="img/video/logo.png">
+    <div>
+        <button class="back" onclick="window.location.href='index'"><span>Back</span></button>
+    </div>
+
+
+    <form action="/Home/loginMe" method="POST">
+        <div class="login-form">
+            <h1>Room booking</h1>
+            <div class="form-group ">
+                <input type="text" class="form-control" placeholder="Username" name="user_name" value="" id="UserName">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="form-group log-status">
+                <input type="password" class="form-control" placeholder="Password" name="user_password" value="" id="Passwod" required>
+                <i class="fa fa-lock"></i>
+            </div>
+            <span class="alert">Invalid Credentials</span>
+            <br>
+            <button type="submit" class="log-btn">Log in</button>
+        </div>
+    </form>
+</body>
+</html>
